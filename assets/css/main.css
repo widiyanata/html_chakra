@@ -1,0 +1,358 @@
+@font-face {
+  font-family: "Stratum2";
+  src: url("../fonts/stratum2-regular-webfont.ttf"),
+    url("../fonts/stratum2-bold-webfont.ttf");
+}
+body {
+  font-family: "Stratum2", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #13538b;
+  border-color: #13538b;
+}
+.text-primary {
+  color: #13538b !important;
+}
+.navbar {
+  transition: all 0.4s;
+  border-bottom: 1px solid #aaa6;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .active .nav-link {
+  color: #13538b;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+}
+
+.navbar-homepage {
+}
+
+.bg-gradient-transparent {
+  background: rgb(168, 168, 168);
+  background: linear-gradient(
+    0deg,
+    rgba(168, 168, 168, 0) 0%,
+    rgba(0, 0, 0, 0.908000700280112) 100%
+  );
+}
+.bg-gradient-transparent-inv {
+  background: rgb(168, 168, 168);
+  background: linear-gradient(
+    180deg,
+    rgba(168, 168, 168, 0) 0%,
+    rgba(41, 41, 41, 0.7) 100%
+  );
+}
+#homeslider h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+}
+#homeslider .carousel-inner {
+  padding-bottom: 70px;
+}
+
+#homeslider .carousel-caption {
+  right: auto;
+  left: 0;
+  text-align: left;
+  width: 100%;
+}
+
+#homeslider .caption-right {
+  margin-bottom: -100px;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.feature {
+  margin-top: -50px;
+}
+
+#homeslider ol.carousel-indicators {
+  left: 0;
+  bottom: 120px;
+  right: auto;
+  margin: 0;
+}
+.carousel-indicators li {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  opacity: 1;
+  /* margin: 10px; */
+  text-indent: unset;
+  background-color: transparent;
+  padding: 0px 12px 6px 12px !important;
+  margin: 5px;
+  border: none;
+  color: #fff;
+}
+.carousel-indicators li.active {
+  /* margin: 10px; */
+  text-indent: unset;
+  background-color: #3336;
+  /* padding: 10px 15px 10px 15px; */
+  /* margin: 5px; */
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.carousel-indicators li .fa {
+  font-size: 8px;
+}
+
+span.btn-play {
+  padding-top: 9px;
+  padding-right: 12px;
+  padding-left: 14px;
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: #fff;
+  background: #3336;
+}
+
+/* Overview */
+.overview {
+  margin-bottom: -87px;
+}
+.overview-img {
+  margin-right: -90px;
+}
+@media screen and (max-width: 768px) {
+  .overview-img {
+    margin-right: 0px;
+  }
+}
+.overview-desc {
+  background: #13538b;
+}
+
+/* IVECO TRUCKS */
+section.iveco-trucks .iveco-header {
+  padding-top: 150px;
+  padding-bottom: 250px;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.iveco-content .card-img-top {
+  height: 250px;
+  width: 100%;
+  margin-top: -250px;
+}
+
+.card-img-offset {
+  margin-top: -150px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card-img-offset img {
+  width: auto;
+  max-height: 220px;
+}
+
+.spek {
+  padding-left: 20px;
+  list-style: square;
+  margin-bottom: 40px;
+}
+
+section.more-info {
+  padding-bottom: 90px !important;
+}
+
+.more-info .info {
+  margin-bottom: 30px;
+}
+
+/* PRODUK DETAIL */
+.jumbotron {
+  /* height: 600px; */
+  position: relative;
+}
+
+.produk-img-cover {
+  margin-bottom: -130px;
+}
+@media screen and (max-width: 768px) {
+  .produk-img-cover {
+    margin-bottom: -50px;
+  }
+}
+.play-btn {
+  position: absolute;
+  right: 0px;
+  bottom: 2%;
+  background: #333333ab;
+  border-radius: 25px;
+  padding-right: 0;
+}
+
+.icon-circle {
+  padding: 3px 10px;
+  border-radius: 50%;
+  padding-right: 5px;
+  border: 1px solid #aaa;
+}
+
+section.produk-fitur {
+  padding-bottom: 150px;
+}
+
+.produk-fitur .produk-overview {
+  text-shadow: 1px 2px 1px #000;
+}
+
+.produk-galeri {
+  padding-bottom: 100px;
+}
+
+.produk-galeri-nav .nav-item {
+  padding: 15px;
+  border-right: 1px solid #eee;
+  margin-top: 40px;
+  max-width: 180px;
+  border-radius: 0;
+}
+.produk-galeri-nav .carousel-indicators {
+  position: relative;
+  margin: 0;
+}
+.produk-galeri-nav .nav-item .nav-link {
+  color: #ccc;
+}
+.produk-galeri-nav .nav-item:last-child {
+  border-right: 0;
+}
+
+#galeri .nav-link {
+  color: #999999;
+}
+#galeri .nav-link.active {
+  color: #13538b;
+}
+
+.produk-related article {
+  border-left: 5px solid #13538b;
+}
+
+/* Footer */
+.top-footer {
+  background: #13538b;
+}
+.img-footer-trucks {
+  margin-top: -90px;
+}
+.btn-sosmed {
+  /* background-color: #fff; */
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+/* General */
+
+.carousel img {
+  width: 100%;
+}
+.text-secondary {
+  color: #999999;
+}
+
+.btn-outline-black {
+  background-color: transparent;
+  border: 1px solid #333;
+}
+.btn-outline-white {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-link {
+  /* padding-left: 1em !important;
+  padding-right: 1em !important; */
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 768px) {
+  section.iveco-trucks .iveco-header {
+    padding-bottom: 30px;
+  }
+  .iveco-content .card-img-top {
+    margin-top: 0;
+  }
+  .img-footer-trucks {
+    margin-top: 0px;
+  }
+}
