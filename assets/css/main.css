@@ -21,6 +21,9 @@ img {
 .text-primary {
   color: #13538b !important;
 }
+.bg-primary {
+  background-color: #13538b !important;
+}
 .navbar {
   transition: all 0.4s;
   border-bottom: 1px solid #aaa6;
@@ -312,6 +315,128 @@ section.produk-fitur {
   margin: 0 7px;
 }
 
+/* ABOUT */
+.header-img {
+  height: 300px;
+}
+
+.about-desc {
+  margin-top: -70px;
+  /* background: white; */
+  background: rgb(168, 168, 168);
+  background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(245 245 245) 100%);
+}
+
+.about-video {
+  height: 333px;
+  background: rgb(168, 168, 168);
+  background: linear-gradient(
+    79deg,
+    rgba(168, 168, 168, 0) 0%,
+    rgba(19, 83, 139, 1) 76%
+  );
+  border-top: 10px solid #03a9f4;
+}
+.btn-play-lg {
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: #fff;
+  background: #3336;
+}
+
+.visi-misi-header {
+  background: #13538b;
+}
+.visi-misi {
+  margin-top: -240px;
+}
+.mission-list li {
+  padding-bottom: 15px;
+}
+
+/* Direktur */
+.direktur-foto,
+.direktur-desc {
+  padding: 6rem !important;
+}
+
+.direktur-foto .card-body {
+  border-left: 7px solid #03a9f4;
+}
+
+.direktur-desc {
+  border-bottom: 10px solid #03a9f4;
+}
+
+/* Core Values */
+.value {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    79deg,
+    rgb(241 241 241 / 77%) 0%,
+    rgba(255, 255, 255, 0.980722891566265) 60%
+  );
+
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  border: 0;
+  border-radius: 0;
+}
+
+.value-icon {
+  margin-top: -50px;
+}
+
+/* Leadership */
+.leadership-traits {
+  border-top: 10px solid #03a9f4;
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+}
+.leadership-list .card {
+  margin: 0;
+}
+
+.leadership-list {
+}
+
+.leadership:first-child .card {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    79deg,
+    rgb(249 249 249) 30%,
+    rgba(255, 255, 255, 0.980722891566265) 90%
+  );
+}
+
+.leadership:last-child .card {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    79deg,
+    rgb(255 255 255) 30%,
+    rgb(248 249 250) 90%
+  );
+}
+
+.ethics-wrapper .card {
+  min-height: 350px;
+}
+
+/* Governance*/
+.governance {
+  background-image: url(../img/gov2.png), url(../img/about/image_30.png);
+  background-position: top left,
+    /* this positions the first image */ bottom left; /* this positions the second image */
+  background-size: auto, 450px;
+  background-repeat: no-repeat;
+
+  /* min-height: 350px; */
+}
 /* General */
 
 .carousel img {
