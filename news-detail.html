@@ -217,64 +217,162 @@
       </nav>
     </header>
 
-    <main class="py-5">
-      <section class="latest-news">
+    <main>
+      <section class="banner-full">
+        <img
+          src="assets/img/news-detail-banner.png"
+          alt=""
+          class="img-fluid w-100"
+        />
+      </section>
+      <section class="news-detail py-5">
         <div class="container">
-          <div class="row shadow no-gutters">
-            <div class="col-md-8">
-              <img
-                src="assets/img/news/latest.png"
-                alt=""
-                class="img-fluid h-100"
-              />
-            </div>
-            <div class="col-md-4 d-flex align-items-center">
-              <div class="news-detail p-3 pl-lg-5">
-                <h3 class="mb-4 text-uppercase text-primary h4">Latest news</h3>
-                <h2 class="font-weight-bold mb-3">
-                  Just in time delivery specialist, Alcaline, look for maximum
-                  vehicle ...
-                </h2>
-                <p class="news-date text-secondary lead">01 March 2021</p>
-                <a href="#" class="btn btn-primary px-4"
-                  >Read more
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </a>
+          <!-- Article -->
+          <div class="row">
+            <!-- Left Col -->
+            <div class="col-md-4">
+              <div class="news-meta">
+                <div class="card border-0">
+                  <div class="card-body p-0">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-3 p-1">
+                        <img
+                          src="https://placehold.it/80"
+                          alt=""
+                          class="img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-9">
+                        <p class="card-text mb-0 text-muted">Article by</p>
+                        <h6 class="card-title mb-0 text-primary">
+                          Chakra Jawara
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-0 px-0 bg-white">
+                    <p>
+                      Share:
+                      <a href="#" class="fa-stack news-share-icon">
+                        <i
+                          class="fa fa-circle fa-stack-2x icon-background text-light"
+                        ></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                      </a>
+                      <a href="#" class="fa-stack news-share-icon">
+                        <i
+                          class="fa fa-circle fa-stack-2x icon-background text-light"
+                        ></i>
+                        <i class="fa fa-whatsapp fa-stack-1x"></i>
+                      </a>
+                      <a href="#" class="fa-stack news-share-icon">
+                        <i
+                          class="fa fa-circle fa-stack-2x icon-background text-light"
+                        ></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                      </a>
+                      <a href="#" class="fa-stack news-share-icon">
+                        <i
+                          class="fa fa-circle fa-stack-2x icon-background text-light"
+                        ></i>
+                        <i class="fa fa-link fa-stack-1x"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+            <!-- Right Col -->
+            <div class="col-md-8">
+              <article>
+                <header class="text-center">
+                  <h2 class="font-weight-bold h1">
+                    IVECO membuka dealer 3S baru di Surabaya, Indonesia
+                  </h2>
+                  <p class="article-meta">
+                    <span class="badge badge-pill badge-info p-2 mr-4"
+                      >Press release</span
+                    >
+                    <span
+                      >Published
+                      <b class="text-primary">11 June 2020 - 1:00 PM</b>
+                    </span>
+                  </p>
+                </header>
+                <div class="content">
+                  <p>
+                    <b
+                      >Chakra Jawara, distributor IVECO Indonesia, hari ini
+                      telah meresmikan dealer 3S baru di Surabaya. Fasilitas
+                      seluas 1.200-meter persegi in telah dirancang dan dibangun
+                      untuk memberikan pelayanan yang paling efisien dalam
+                      penjualan unit, suku cadang, dan servis untuk keseluruhan
+                      produk IVECO.</b
+                    >
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate dolore quod sunt quidem odit quae, deleniti
+                    possimus quos consequuntur voluptatem aspernatur, eius
+                    cupiditate eveniet ratione laboriosam! Atque alias eaque
+                    deserunt!
+                  </p>
+
+                  <figure class="figure">
+                    <img
+                      src="assets/img/news-detail-foto.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <figcaption class="figure-caption text-xs-right">
+                      <i>
+                        The Z-axis fly through was the main "wow factor" on the
+                        site.
+                      </i>
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="news-list mt-5">
+      <!-- Related article -->
+      <section class="related-article py-5 bg-light">
         <div class="container">
           <div class="row">
+            <div class="col-12">
+              <h3 class="text-center mb-5">Related articles</h3>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-4 d-flex justify-content-stretch">
-              <div class="card mb-4">
+              <div class="card mb-4 border-0">
                 <img
                   class="card-img-top"
                   src="assets/img/news/news1.png"
                   alt=""
                 />
                 <div class="card-body">
-                  <p class="text-uppercase text-primary lead news-cat">News</p>
+                  <p class="text-primary lead news-cat">News</p>
                   <h4 class="card-title">
-                    Just in time delivery specialist, Alcaline, look for maximum
-                    vehicle
+                    Just in time delivery specialist, Alcaline,
                   </h4>
                   <p class="card-text text-secondary">02 March 2021</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 d-flex justify-content-stretch">
-              <div class="card mb-4">
+              <div class="card mb-4 border-0">
                 <img
                   class="card-img-top"
                   src="assets/img/news/news2.png"
                   alt=""
                 />
                 <div class="card-body">
-                  <p class="text-uppercase text-primary lead news-cat">News</p>
+                  <p class="text-primary lead news-cat">Promotion</p>
                   <h4 class="card-title">
                     Just in time delivery specialist, Alcaline, look for maximum
                     vehicle
@@ -284,89 +382,20 @@
               </div>
             </div>
             <div class="col-md-4 d-flex justify-content-stretch">
-              <div class="card mb-4">
+              <div class="card mb-4 border-0">
                 <img
                   class="card-img-top"
                   src="assets/img/news/news3.png"
                   alt=""
                 />
                 <div class="card-body">
-                  <p class="text-uppercase text-primary lead news-cat">News</p>
+                  <p class="text-primary lead news-cat">News</p>
                   <h4 class="card-title">
                     Just in time delivery specialist, Alcaline, look for maximum
                     vehicle
                   </h4>
                   <p class="card-text text-secondary">02 March 2021</p>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-stretch">
-              <div class="card mb-4">
-                <img
-                  class="card-img-top"
-                  src="assets/img/news/news4.png"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="text-uppercase text-primary lead news-cat">News</p>
-                  <h4 class="card-title">
-                    Just in time delivery specialist, Alcaline, look for maximum
-                    vehicle
-                  </h4>
-                  <p class="card-text text-secondary">02 March 2021</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-stretch">
-              <div class="card mb-4">
-                <img
-                  class="card-img-top"
-                  src="assets/img/news/news5.png"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="text-uppercase text-primary lead news-cat">News</p>
-                  <h4 class="card-title">
-                    Just in time delivery specialist, Alcaline, look for maximum
-                    vehicle
-                  </h4>
-                  <p class="card-text text-secondary">02 March 2021</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-stretch">
-              <div class="card mb-4">
-                <img
-                  class="card-img-top"
-                  src="assets/img/news/news6.png"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="text-uppercase text-primary lead news-cat">News</p>
-                  <h4 class="card-title">
-                    Just in time delivery specialist, Alcaline, look for maximum
-                    vehicle
-                  </h4>
-                  <p class="card-text text-secondary">02 March 2021</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Load more button -->
-          <div class="row">
-            <div class="col">
-              <div class="text-center my-4">
-                <a href="#" class="btn btn-link font-weight-bold"
-                  >LOAD MORE ARTICLES
-                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                </a>
-                <p class="load-more-spinner d-none">
-                  <i
-                    class="fa fa-circle-o-notch fa-spin"
-                    aria-hidden="true"
-                  ></i>
-                </p>
               </div>
             </div>
           </div>

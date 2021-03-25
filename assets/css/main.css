@@ -437,6 +437,11 @@ section.produk-fitur {
 
   /* min-height: 350px; */
 }
+
+/* News Detail */
+.news-share-icon {
+  color: #333;
+}
 /* General */
 
 .carousel img {
