@@ -7,6 +7,6 @@
 3. detail truck model - ok
 4. part n services - ok
 5. produk - FTP - ok
-6. produk - ZF
-7. homepage popup , dan popup 2
+6. produk - ZF - ok
+7. homepage popup , dan popup 2 - ok
 8. search result
