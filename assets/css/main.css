@@ -685,3 +685,28 @@ img {
 .product {
   margin-bottom: 7rem;
 }
+
+/* Wizard step CSS */
+.step-anchor li {
+  border-bottom: 3px solid #ddd;
+  margin-right: 10px;
+}
+
+.step-anchor li.active {
+  border-color: #13538b;
+}
+
+.step-anchor li .nav-link {
+  padding-bottom: 0;
+  color: #aaaa;
+  padding-left: 0;
+}
+
+.step-anchor li.active .nav-link {
+  color: #13538b;
+}
+
+.v-type {
+  float: left;
+  width: 200px;
+}
