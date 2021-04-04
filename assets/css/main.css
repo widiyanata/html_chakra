@@ -747,3 +747,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

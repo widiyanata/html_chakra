@@ -106,12 +106,12 @@
                 <li class="d-none">
                   <div class="dropdown">
                     <button
-                      class="btn btn-transparent dropdown-toggle nav-link border-left ml-3 px-3"
+                      class="btn btn-transparent dropdown-toggle nav-link border-left ml-3 px-3 collapsed"
                       type="button"
                       id="triggerId"
                       data-toggle="dropdown"
                       aria-haspopup="true"
-                      aria-expanded="false"
+                      aria-expanded="true"
                     >
                       <i class="fa fa-globe" aria-hidden="true"></i>
                       EN
@@ -127,33 +127,46 @@
             </div>
           </div>
         </nav>
-        <div id="searchwrapper" class="">
+        <div id="searchwrapper" class="bg-primary text-white">
           <div class="container">
             <div class="row">
               <div class="col-12">
                 <div id="searchbar" role="tablist" aria-multiselectable="true">
                   <div
                     id="searchinput"
-                    class="collapse in my-4"
+                    class="collapse in my-4 show"
                     role="tabpanel"
                     aria-labelledby="section1HeaderId"
                   >
                     <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control border-0 text-center"
-                        name="name"
-                        id="name"
-                        placeholder="Search here..."
-                        aria-label=""
-                      />
                       <span class="input-group-btn">
                         <button
-                          class="btn btn-secondary"
+                          class="btn btn-default text-white"
                           type="submit"
                           aria-label=""
                         >
                           <i class="fa fa-search"></i>
+                        </button>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control border-0 text-left bg-transparent text-white"
+                        name="name"
+                        id="name"
+                        placeholder="Search here..."
+                        aria-label=""
+                        value="Iveco astra"
+                      />
+                      <span class="input-group-btn">
+                        <button
+                          class="btn btn-default text-white"
+                          type="submit"
+                          aria-label=""
+                          data-toggle="collapse"
+                          data-parent="#searchbar"
+                          href="#searchinput"
+                        >
+                          <i class="fa fa-times"></i>
                         </button>
                       </span>
                     </div>
