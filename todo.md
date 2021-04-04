@@ -11,6 +11,8 @@
 7. homepage popup , dan popup 2 - ok
 8. search result
 
-### NOTES
+---
 
-1. footer butuh image yang gambar trucks
+> NOTES
+
+- footer butuh image yang gambar trucks
