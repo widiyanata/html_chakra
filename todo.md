@@ -10,3 +10,7 @@
 6. produk - ZF - ok
 7. homepage popup , dan popup 2 - ok
 8. search result
+
+### NOTES
+
+1. footer butuh image yang gambar trucks
