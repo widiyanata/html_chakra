@@ -378,8 +378,8 @@
                 <h3>Iveco Trucks <span class="text-primary">offers the right solution</span> <br> </h3>
                 <p>Dedicated to providing superior trucks built to revlutionizing the way ou do the business</p> 
               </div>
-              <div class="col-md-4">
-                    <a href="#" class="btn btn-primary btn-lg">CONFIGURE TRUCK NOW <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
+              <div class="col-md-4 text-right">
+                    <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#definetruck">CONFIGURE TRUCK NOW <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
                   </div>
             </div>
           </div>
@@ -529,7 +529,136 @@
       </section>
 
     </main>
+  <!-- Modal Define your truck  -->
+  <div class="modal fade" id="definetruck" tabindex="-1" role="dialog" aria-labelledby="definetruckLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white  rounded-0">
+          <h5 class="modal-title" id="definetruckLabel"> <img src="assets/img/logo-ts.png" width="50" alt=""> DEFINE YOUR TRUCK</h5>
+          <div>
+            close
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"> <span
+                aria-hidden="true">&times;</span> </button>
+          </div>
+        </div>
+        <form action="">
+          <div class="modal-body p-0">
+            <div id="smartwizard">
+              <ul class="d-flex bg-light py-3 px-4 border-0">
+                <li class="flex-fill"><a href="#step-1">1. Truck application</a></li>
+                <li class="flex-fill"><a href="#step-2">2. Results</a></li>
+              </ul>
+              <div class="p-4">
 
+                <div id="step-1">
+                  <div class="wheel-config py-5 text-center">
+                    <header>
+                      <h5 class="font-weight-bold text-primary mb-4">What type of vehicle do you want?</h5>
+                    </header>
+                    <div class="wheel-type pb-5 mb-4 text-justify d-inline-block">
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Chasis cav
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Fuel tank
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Scow end
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Coal body
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Manhaul
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Dump body
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Prime mover
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline v-type d-inline-block">
+                        <label class="form-check-label h3">
+                          <input class="form-check-input" type="radio" name="v_type" id="" value=""> Others
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary sw-btn-next" type="button">Next Step <i class="fa fa-chevron-right"
+                        aria-hidden="true"></i> </button>
+                  </div>
+                </div>
+                <div id="step-2">
+                  <div class="row">
+                    <div class="col">
+                      <div class="text-center">
+                        <h4 class="text-primary">Choose your model</h4>
+                        <p>We found three models for your configuration</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img class="card-img-top img-thumbnail" src="assets/img/popup/5.png" alt="">
+                        <div class="card-body">
+                          <h6 class="card-title">IVECO 682 6x4</h6>
+                          <p class="card-text">Casual body</p>
+                          <a href="#" class="btn btn-default btn-block btn-outline-black">VIEW DETAILS</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img class="card-img-top img-thumbnail" src="assets/img/popup/6.png" alt="">
+                        <div class="card-body">
+                          <h6 class="card-title">IVECO TRAKKER 8x4</h6>
+                          <p class="card-text">Casual body</p>
+                          <a href="#" class="btn btn-default btn-block btn-outline-black">VIEW DETAILS</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img class="card-img-top img-thumbnail" src="assets/img/popup/7.png" alt="">
+                        <div class="card-body">
+                          <h6 class="card-title">IVECO ASTRA 8x6</h6>
+                          <p class="card-text">Casual body</p>
+                          <a href="#" class="btn btn-default btn-block btn-outline-black">VIEW DETAILS</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col d-flex justify-content-between ">
+                      <a href="#" class="back btn btn-link text-dark">Back</a>
+                      <!-- <a href="#" class="back btn btn-primary px-4">FINISH</a> -->
+                      <button class="back btn btn-primary px-4" type="submit">FINISH</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
     
     <footer class="footer">
       <div
@@ -618,13 +747,16 @@
       </div>
     </footer>
 
+    <!-- Modal Define your truck -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -649,6 +781,42 @@
         });
       });
 
+    </script>
+
+      <!-- Step wizard -->
+  <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet"
+  type="text/css" />
+<!-- <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css" rel="stylesheet" type="text/css" /> -->
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+
+    <!-- Wizard js -->
+    <script>
+      $(document).ready(function () {
+        // DOCS: http://techlaboratory.net/jquery-smartwizard
+        $('#smartwizard').smartWizard({
+          selected: 0,
+          theme: 'arrows',
+          autoAdjustHeight: true,
+          transitionEffect: 'fade',
+          showStepURLhash: false,
+          toolbarSettings: {
+  
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+  
+          },
+  
+        });
+  
+        $('.back').on("click", function () {
+          // Navigate next
+          $('#smartwizard').smartWizard("prev");
+        })
+  
+  
+      });
+  
     </script>
   </body>
 </html>
