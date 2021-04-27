@@ -72,7 +72,7 @@ img {
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {
-    background: #fff;
+    /* background: #fff; */
   }
 
   .navbar .navbar-brand,
