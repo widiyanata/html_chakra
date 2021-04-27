@@ -526,6 +526,10 @@ img {
   .img-footer-trucks {
     margin-top: 0px;
   }
+
+  #homeslider h1 {
+    font-size: 2em;
+  }
 }
 
 /* Milestone CSS */
