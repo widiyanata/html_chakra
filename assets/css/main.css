@@ -755,3 +755,13 @@ img {
   outline: none !important;
   box-shadow: none !important;
 }
+
+.navbar-collapse.collapse.show {
+  background: #fff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.navbar-collapse.collapse.show .nav-link {
+  color: #333;
+}
