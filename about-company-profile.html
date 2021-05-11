@@ -84,7 +84,13 @@
               <ul class="navbar-nav ml-auto">
                 <li class="d-md-block navbar-form navbar-right">
                   <button
-                    class="search-form-tigger btn btn-transparent bg-transparent nav-link px-3"
+                    class="
+                      search-form-tigger
+                      btn btn-transparent
+                      bg-transparent
+                      nav-link
+                      px-3
+                    "
                     data-toggle="collapse"
                     data-parent="#searchbar"
                     href="#searchinput"
@@ -106,7 +112,14 @@
                 <li class="d-none">
                   <div class="dropdown">
                     <button
-                      class="btn btn-transparent dropdown-toggle nav-link border-left ml-3 px-3"
+                      class="
+                        btn btn-transparent
+                        dropdown-toggle
+                        nav-link
+                        border-left
+                        ml-3
+                        px-3
+                      "
                       type="button"
                       id="triggerId"
                       data-toggle="dropdown"
@@ -168,7 +181,14 @@
       <!-- Subnavigation -->
       <nav class="navbar navbar-expand-sm navbar-light bg-white p-0">
         <h5
-          class="subnav-title p-3 bg-primary mb-0 pl-5 text-white text-uppercase"
+          class="
+            subnav-title
+            p-3
+            bg-primary
+            mb-0
+            pl-5
+            text-white text-uppercase
+          "
         >
           COMPANY
         </h5>
@@ -226,7 +246,13 @@
               </div>
             </div>
             <div
-              class="col-md-6 text-center justify-content-center d-flex align-items-center"
+              class="
+                col-md-6
+                text-center
+                justify-content-center
+                d-flex
+                align-items-center
+              "
             >
               <img class="img-fluid" src="assets/img/gedung.png" alt="" />
             </div>
@@ -470,13 +496,28 @@
                 src="assets/img/about/bg-video.png"
               />
             </div>
-          <!-- 21:9 aspect ratio -->
-          <div class="embed-responsive embed-responsive-21by9">
-            <iframe
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-            ></iframe>
+            <!-- 21:9 aspect ratio -->
+            <div
+              id="thevideo"
+              class="embed-responsive embed-responsive-21by9"
+              style="display: none"
+            >
+              <iframe
+                id="video"
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+              ></iframe>
+            </div>
           </div>
+
+          <script>
+            document
+              .querySelector("#custom-cover")
+              .addEventListener("click", function (ev) {
+                document.querySelector("#video").src += "&autoplay=1";
+                ev.preventDefault();
+              });
+          </script>
 
           <!-- <div
             class="about-video d-flex align-items-center justify-content-center"
@@ -577,7 +618,13 @@
               <div class="shape-2 d-none d-md-block"></div>
             </div>
             <div
-              class="col-md-7 d-flex justify-content-center align-items-center bg-primary"
+              class="
+                col-md-7
+                d-flex
+                justify-content-center
+                align-items-center
+                bg-primary
+              "
             >
               <div
                 id="testimoni-slider"
