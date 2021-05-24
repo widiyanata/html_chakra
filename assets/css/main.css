@@ -642,6 +642,13 @@ img {
   margin-right: 10px;
 }
 
+.carousel-item blockquote p:after {
+  content: "\f10e";
+  font-family: "Fontawesome";
+  /* float: left; */
+  margin-left: 10px;
+}
+
 .shape-2 {
   width: 290px;
   height: 100%;
