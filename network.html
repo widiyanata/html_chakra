@@ -284,8 +284,13 @@
                     <p class="card-title text-primary">CONTACT</p>
                     <p class="card-text">Phone: <b>+62 21 2997 6849</b></p>
                     <a
-                      href="https://maps.google.com/maps?q=Chakra+jawara"
-                      class="text-white lightbox mfp-iframe btn btn-primary"
+                      href="#"
+                      class="text-white btn btn-primary open-map"
+                      data-toggle="modal"
+                      data-target="#modalmap1"
+                      data-lokasi='["-6.156954268955174, 106.81411740405635","-6.148023804062372, 106.83861431330313","-6.174002921158246, 106.83412321327457", "-6.3485696068714645, 106.85178976583153"]'
+                      data-lok_name='["Tempat 1", "Tempat 2", "Tempat 3", "tempat 4"]'
+                      data-title="Samarinda"
                     >
                       View on
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -455,6 +460,37 @@
       </div>
     </footer>
 
+    <!-- Modal MAP -->
+    <div
+      class="modal fade"
+      id="modalmap1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="location-map" id="location-map">
+              <div style="width: 600px; height: 400px" id="map_canvas"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -476,6 +512,13 @@
     <script src="assets/js/main.js"></script>
 
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7SGEnIJ33yT401jdB2tMGLmCNsBnPRgE"
+      type="text/javascript"
+    ></script>
 
     <script>
       $(function () {
@@ -539,6 +582,115 @@
             },
           },
         });
+      });
+    </script>
+
+    <script>
+      var map = null;
+      // var markers = [
+      //   ["London Eye, London", 51.503454, -0.119562],
+      //   ["Palace of Westminster, London", 51.499633, -0.124755],
+      // ];
+
+      var lokasi = [];
+      var lok_name = [];
+
+      function initialize(lokasi, lok_name) {
+        var lokasi = lokasi;
+        var map;
+        var bounds = new google.maps.LatLngBounds();
+        var mapOptions = {
+          mapTypeId: "roadmap",
+          zoom: 11,
+        };
+
+        // Display a map on the page
+        map = new google.maps.Map(
+          document.getElementById("map_canvas"),
+          mapOptions
+        );
+        map.setTilt(45);
+
+        // Info Window Content
+        // var infoWindowContent = [
+        //   [
+        //     '<div class="info_content">' +
+        //       "<h3>London Eye</h3>" +
+        //       "<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>" +
+        //       "</div>",
+        //   ],
+        //   [
+        //     '<div class="info_content">' +
+        //       "<h3>Palace of Westminster</h3>" +
+        //       "<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>" +
+        //       "</div>",
+        //   ],
+        // ];
+
+        // Display multiple markers on a map
+        var infoWindow = new google.maps.InfoWindow(),
+          marker,
+          i;
+
+        // Loop through our array of markers & place each one on the map
+        for (i = 0; i < lokasi.length; i++) {
+          var lokarray = lokasi[i].split(",");
+          var position = new google.maps.LatLng(lokarray[0], lokarray[1]);
+          bounds.extend(position);
+          marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: lok_name[i],
+          });
+
+          // Allow each marker to have an info window
+          google.maps.event.addListener(
+            marker,
+            "click",
+            (function (marker, i) {
+              return function () {
+                infoWindow.setContent(marker.title);
+                infoWindow.open(map, marker);
+              };
+            })(marker, i)
+          );
+
+          // Automatically center the map fitting all markers on the screen
+          map.fitBounds(bounds);
+        }
+
+        // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+        var boundsListener = google.maps.event.addListener(
+          map,
+          "bounds_changed",
+          function (event) {
+            this.setZoom(mapOptions.zoom);
+            google.maps.event.removeListener(boundsListener);
+          }
+        );
+      }
+
+      $(".open-map").on("click", function (e) {
+        var target = $(this).data("target");
+        var modal_title = $(this).data("title");
+
+        // Set modal title
+        $(target + " .modal-title").text(modal_title);
+
+        lokasi = $(this).data("lokasi");
+        lok_name = $(this).data("lok_name");
+
+        console.log(lokasi[0]);
+      });
+
+      $("#modalmap1").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget);
+        initialize(lokasi, lok_name);
+        $("#location-map").css("width", "100%");
+        $("#map_canvas").css("width", "100%");
+      });
+      $("#modalmap1").on("shown.bs.modal", function () {
+        google.maps.event.trigger(map, "resize");
       });
     </script>
   </body>
