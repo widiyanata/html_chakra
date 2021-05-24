@@ -235,6 +235,7 @@ section.more-info {
 .jumbotron {
   /* height: 600px; */
   position: relative;
+  min-height: 500px;
 }
 
 .produk-img-cover {
